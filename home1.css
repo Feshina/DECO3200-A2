@@ -284,6 +284,7 @@ h4 {
 
     .transaction-container {
         display: flex;
+        flex-direction: column;
         position: fixed;
         top: 0;
         right: 0;
@@ -293,9 +294,30 @@ h4 {
         border-radius: 2rem 0 0 2rem;
     }
 
-    .transaction-container {
+    .transaction-text {
+        display: inline;
+        color: black;
+    }
+
+    .transaction-icon {
+        width: 3.5rem;
+    }
+
+    .transaction {
+        width: 100%;
         display: flex;
-        max-width: 100%;
-        padding: 3rem;
+        align-items: center;
+        height: 4rem;
+        text-decoration: none;
+    }
+
+    .transaction-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
     }
 }
