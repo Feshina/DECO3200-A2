@@ -37,7 +37,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 6px rgb(240, 240, 240);
-    -webkit-box-shadow: inset 0 0 6px rgb(240, 240, 240); 
+    -webkit-box-shadow: inset 0 0 6px rgb(240, 240, 240);
     background: white;
     border-radius: 5px;
 }
@@ -59,6 +59,7 @@ h2 {
 h3 {
     font-size: 1.5rem;
     margin: 0;
+    padding: 0;
 }
 
 h4 {
@@ -110,7 +111,6 @@ h4 {
     align-items: center;
     height: 4rem;
     text-decoration: none;
-    
 }
 
 .nav-link:hover {
@@ -127,22 +127,19 @@ h4 {
     display: none;
     margin-left: 1rem;
 }
-  
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-    fill:gray;
+
+.svg-icon path, .svg-icon polygon, .svg-icon rect {
+    fill: gray;
 }
-  
+
 .svg-icon circle {
-    stroke:gray;
+    stroke: gray;
     stroke-width: 1;
 }
 
 /* MuSt Be UsAbLe On BoTh MoBiLe AnD dEsKtOp */
 
 @media only screen and (max-width: 600px) {
-    
     main {
         padding: 2rem;
     }
@@ -172,7 +169,7 @@ h4 {
         margin: 0.1rem;
         font-family: Nunito, sans-serif;
     }
-    
+
     .navbar {
         bottom: 0;
         width: 100vh;
@@ -189,7 +186,6 @@ h4 {
 }
 
 @media only screen and (min-width: 600px) {
-    
     .graph-box {
         display: flex;
         flex-direction: column;
@@ -210,7 +206,7 @@ h4 {
         padding-bottom: 3rem;
         padding-top: 2rem;
     }
-    
+
     #hello {
         margin-left: 1rem;
     }
@@ -265,39 +261,41 @@ h4 {
     }
 
     main {
-        margin-left: 4rem;
+        margin-left: 4.5rem;
         margin-top: 2rem;
         padding-left: 3rem;
     }
-    
+
     .navbar {
         border-radius: 0 2rem 0 0;
         top: 0;
         width: 4rem;
         height: 100vh;
     }
-    
+
     .navbar:hover {
         width: 14rem;
     }
-    
+
     .navbar:hover .link-text {
         display: inline;
         color: grey;
     }
 
-    .transaction-list {
+    .transaction-container {
         display: flex;
-        float: right;
         position: fixed;
         top: 0;
         right: 0;
-        max-width: 30%;
-        width: auto;
+        width: 25%;
         height: 100vh;
-        margin-left: 0px;
-        margin-top: 0px;
         background-color: white;
-        padding-top: 0;
+        border-radius: 2rem 0 0 2rem;
+    }
+
+    .transaction-container {
+        display: flex;
+        max-width: 100%;
+        padding: 3rem;
     }
 }
