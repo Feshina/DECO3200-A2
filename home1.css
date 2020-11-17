@@ -66,7 +66,7 @@ h4 {
     margin: 0;
     margin-top: 1.2rem;
     padding: 0;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .welcome-text {
@@ -292,7 +292,7 @@ h4 {
         height: 100vh;
         background-color: white;
         border-radius: 2rem 0 0 2rem;
-        padding: 2rem;
+        padding: 3rem 3rem 2rem 3rem;
     }
 
     .transaction-list {
@@ -319,17 +319,25 @@ h4 {
 
     .transaction-icon {
         max-width: 4rem;
-        margin: 1rem;
+        margin: 1rem 1rem 1rem 0;
     }
 
     .transaction-text {
         display: inline;
-        color: grey;
+        line-height: 1.6;
+        color: #252E48;
     }
 
-    .transaction-subtext {
-        display: inline;
-        color: grey;
+    .transaction-text-numbers {
+        color: rgb(160, 160, 160);
+    }
+
+    .transaction-divider {
+        font-size: large;
+    }
+
+    .underline {
+        text-decoration: underline;
     }
 
 }
