@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #bbb;
+    opacity: 1;
+  }
+
+body {
+    font-family: "Nunito";
+    background-image: linear-gradient(#79cdba, #9ce8d1);
+    background-repeat: no-repeat;
+    padding: 50px;
+    overflow: hidden
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.login {
+    margin: auto;
+    width: 350px;
+    height: 450px;
+    margin-bottom: 30vh;
+}
+
+.login-screen {
+    background-color: #FFF;
+    padding: 20px;
+    margin-top: 20vh;
+    border-radius: 5px 40px 5px;
+}
+
+.app-title {
+    text-align: center;
+    color: #252E48;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.control-group {
+    margin-bottom: 10px;
+}
+
+input {
+    text-align: center;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 250px;
+    transition: border .5s;
+}
+
+input:focus {
+    border: 2px solid #1cc592;
+    box-shadow: none;
+}
+
+.btn {
+    border: 2px solid transparent;
+    background: #47be9b;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 5px 20px 5px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+    margin: 30px auto;
+}
+
+.btn:hover {
+    background-color: #1c9c76;
+}
+
+.login-link {
+    font-size: 12px;
+    color: #444;
+    display: block;
+    margin-top: 12px;
+}
