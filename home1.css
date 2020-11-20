@@ -237,7 +237,7 @@ main {
 
     .transaction-scrollable {
         margin-top: 1rem;
-        height: 75vh;
+        height: 70vh;
         overflow: scroll;
     }
 
