@@ -18,11 +18,11 @@ body {
     background-image: linear-gradient(#79cdba, #9ce8d1);
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
-    margin-top: 15vh;
 }
 
 body::-webkit-scrollbar {
@@ -33,16 +33,15 @@ h1 {
     margin-bottom: 30px;
 }
 
-
 .login-screen {
     background-color: #FFF;
-    padding: 20px;
+    padding: 2vw;
     border-radius: 5px 30px 5px;
     width: 350px;
     height: 350px;
 }
 
-.app-title {
+.card-title {
     text-align: center;
     color: #252E48;
 }
@@ -51,7 +50,7 @@ h1 {
     text-align: center;
 }
 
-.control-group {
+.input-field {
     margin-bottom: 10px;
 }
 
