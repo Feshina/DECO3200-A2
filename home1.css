@@ -150,15 +150,15 @@ main {
     
     main {
         width: 100vw;
-        padding-top: 2rem;
+        padding-top: 5vh;
     }
 
     body::-webkit-scrollbar {
         display: none;
     }
 
-    #hello {
-        padding-left: 1rem;
+    .hello {
+        padding-left: 5vw;
     }
 
     .planet-box {
