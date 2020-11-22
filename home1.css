@@ -142,7 +142,7 @@ main {
 
 /* MuSt Be UsAbLe On BoTh MoBiLe AnD dEsKtOp */
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 850px) {
 
     body {
         display: block;
@@ -194,7 +194,6 @@ main {
         bottom: 0;
         width: 100vw;
         height: 4rem;
-        overflow-x: hidden; 
     }
 
     .navbar-nav {
@@ -202,8 +201,13 @@ main {
         align-items: center;
     }
 
+    .nav-link {
+        justify-content: center;
+    }
+
     .link-text {
         display: none;
+        margin: 0;
     }
 
     .logo {
@@ -215,7 +219,7 @@ main {
         flex-direction: column;
         align-items: baseline;
         padding: 7vw 7vw 7vw 7vw;
-        margin-bottom: 5rem;
+        margin-bottom: 3vw;
         margin-right: 3vw;
         margin-left: 3vw;
         background-color: rgb(255, 255, 255);
@@ -344,14 +348,17 @@ main {
     }
 }
 
-@media only screen and (min-width: 850px) and (max-width: 1200px) {
+@media only screen and (min-width: 850px) {
 
+    h3 {
+        padding-top: 3vw;
+    }
+    
     .graph-box {
         display: flex;
         flex-direction: column;
-        width: auto;
-        min-width: 100%;
-        padding: 2rem;
+        width: 50vw;
+        padding-left: 5vw;
         background-color: rgb(255, 255, 255);
         border-radius: 2rem;
         margin-bottom: 2rem;
@@ -371,35 +378,31 @@ main {
     .planet-box {
         display: flex;
         flex-direction: row;
-        width: auto;
-        flex-grow: 1;
-        width: 100%;
-        padding-left: 1rem;
+        width: 50vw;
+        padding-left: 5vw;
         background-color: rgb(255, 255, 255);
         border-radius: 2rem;
         margin-bottom: 2rem;
     }
 
     .viz {
-        height: 180px;
+        width: auto;
         padding-bottom: 3rem;
         padding-top: 2rem;
     }
 
     .viz-box {
-        top: 0px;
         display: flex;
         flex-direction: column;
-        min-width: 75%;
-        padding: 1rem;
-        padding: 2rem 1rem 0 1rem;
+        width: 40vw;
+
     }
 
     .stat-box {
-        width: 25%;
+        width: 10vw;
         color: white;
         background-color: rgb(26, 131, 163);
-        padding: 2rem;
+        padding: 5vh;
         border-radius: 0 2rem 2rem 2rem;
     }
 
@@ -416,9 +419,7 @@ main {
     }
 
     main {
-        margin-left: 6rem;
-        margin-top: 2rem;
-        padding-left: 3rem;
+        margin-left: 8vw;
     }
 
     .navbar {
@@ -442,16 +443,129 @@ main {
     }
 
     .transaction-container {
-        -webkit-position: sticky;
-        position: sticky;
-        top: 0;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 26vw;
+        height: 90vh;
         background-color: white;
         border-radius: 2rem 2rem 2rem 2rem;
         padding: 3rem 1rem 2rem 3rem;
+        margin-right: 2rem;
+    }
+
+    .transaction-scrollable {
+        margin-top: 1rem;
+        height: 83vh;
+        overflow: auto;
+    }
+
+    .transaction-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        height: 100%;
+    }
+
+    .transaction-scrollable::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+    
+    .transaction-scrollable::-webkit-scrollbar-track {
+        background-color: #fefefe;
+    }
+    
+    .transaction-scrollable::-webkit-scrollbar-thumb {
+        background-color: lightgrey;
+        border-radius: 5px;
+        visibility: hidden;
+    }
+
+    .transaction-scrollable:hover::-webkit-scrollbar-thumb {
+        visibility: visible;
+    }    
+
+    .transaction {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 4rem;
+        text-decoration: none;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .transaction-item {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .transaction-icon {
+        max-width: 4rem;
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    .transaction-text {
+        display: inline;
+        line-height: 1.6;
+        color: #252E48;
+    }
+
+    .transaction-text-numbers {
+        color: rgb(160, 160, 160);
+    }
+
+    .transaction-divider {
+        font-size: large;
+    }
+
+    .underline {
+        text-decoration: underline;
+    }
+
+    .transaction-score-text-happy {
+        font-family: "Nunito", sans-serif;
+        font-weight: bold;
+        color: #70BEAA;
+        margin-left: auto;
+    }
+
+    .transaction-score-text-medium {
+        font-family: "Nunito", sans-serif;
+        font-weight: bold;
+        color: #EAAE78;
+        margin-left: auto;
+    }
+
+    .transaction-score-text-sad {
+        font-family: "Nunito", sans-serif;
+        font-weight: bold;
+        color: #FF6469;
+        margin-left: auto;
+    }
+
+    .transaction-score-icon {
+        height: 2rem;
+        margin: 1rem;
+        
+    }
+
+/*
+    .transaction-container {
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 2rem;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 5vw;
         margin-bottom: 1rem;
     }
 
@@ -554,15 +668,17 @@ main {
         height: 2rem;
         margin: 1rem;
         
-    }
+    } */
 }
+ 
 
+/*
 @media only screen and (min-width: 1200px) {
     .graph-box {
         display: flex;
         flex-direction: column;
         width: auto;
-        min-width: 100%;
+        width: 60vh;
         padding: 2rem;
         background-color: rgb(255, 255, 255);
         border-radius: 2rem;
@@ -607,7 +723,7 @@ main {
     }
 
     .stat-box {
-        width: 25%;
+        width: 20%;
         color: white;
         background-color: rgb(26, 131, 163);
         padding: 2rem;
@@ -765,4 +881,4 @@ main {
         margin: 1rem;
         
     }
-}
+} */
