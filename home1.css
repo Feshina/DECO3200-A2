@@ -40,7 +40,6 @@ body::-webkit-scrollbar-thumb {
 h1 {
     font-size: 2.5rem;
     margin: 0;
-    padding-left: 1rem;
     padding-bottom: 2rem;
 }
 
@@ -357,8 +356,8 @@ main {
     .graph-box {
         display: flex;
         flex-direction: column;
-        width: 50vw;
-        padding-left: 5vw;
+        width: 52vw;
+        padding-left: 3vw;
         background-color: rgb(255, 255, 255);
         border-radius: 2rem;
         margin-bottom: 2rem;
@@ -378,8 +377,8 @@ main {
     .planet-box {
         display: flex;
         flex-direction: row;
-        width: 50vw;
-        padding-left: 5vw;
+        width: 52vw;
+        padding-left: 3vw;
         background-color: rgb(255, 255, 255);
         border-radius: 2rem;
         margin-bottom: 2rem;
@@ -449,10 +448,10 @@ main {
         top: 0;
         right: 0;
         width: 26vw;
-        height: 90vh;
+        height: 95vh;
         background-color: white;
         border-radius: 2rem 2rem 2rem 2rem;
-        padding: 3rem 1rem 2rem 3rem;
+        padding: 0rem 2vw 5vh 3vw;
         margin-right: 2rem;
     }
 
