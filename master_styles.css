@@ -166,12 +166,36 @@ html {
     }
 
     .planet-box {
+        display: flex;
+        flex-direction: column;
         padding: 7vw 7vw 7vw 7vw;
         margin-right: 3vw;
         margin-left: 3vw;
         background-color: white;
         border-radius: 2rem 2rem 0 0;
     }
+
+    .viz-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .viz {
+        width: 60vw;
+        align-self: center;
+        margin-top: 10vh;
+        animation: MoveUpDown 1.5s linear infinite;
+    }
+      
+      @keyframes MoveUpDown {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
 
     .stat-box {
         display: none;
@@ -401,7 +425,7 @@ html {
     }
 
     .viz {
-        width: 15vw;
+        width: 17vw;
         padding-bottom: 3rem;
         padding-top: 2rem;
         align-self: center;
