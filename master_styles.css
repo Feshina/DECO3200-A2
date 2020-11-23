@@ -58,9 +58,18 @@ h3 {
 
 h4 {
     margin: 0;
-    margin-top: 1.2rem;
     padding: 0;
     font-weight: bold;
+}
+
+h5 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.page-heading {
+    margin-top: 1.2rem;
 }
 
 .welcome-text {
@@ -76,10 +85,6 @@ html {
 .logo {
     margin-top: 0;
     width: 4rem;
-}
-
-main {
-    margin-right: 0;
 }
 
 .navbar {
@@ -165,9 +170,6 @@ main {
         margin-right: 3vw;
         margin-left: 3vw;
         background-color: white;
-        /*border-width: 1px;
-        border-color: red;
-        border-style: solid; */
         border-radius: 2rem 2rem 0 0;
     }
 
@@ -185,7 +187,7 @@ main {
         font-size: 20px;
         font-weight: bold;
         padding: 0;
-        margin: 0.1rem;
+        margin: 0.1rem 0.1rem 1rem 0.1rem;
         font-family: Nunito, sans-serif;
     }
 
@@ -329,7 +331,7 @@ main {
     .transaction-score-text-medium {
         font-family: "Nunito", sans-serif;
         font-weight: bold;
-        color: #EAAE78;
+        color: #ffc18a;
         margin-left: auto;
     }
 
@@ -349,14 +351,18 @@ main {
 
 @media only screen and (min-width: 901px) {
 
+    .page-heading {
+        padding-top: 1vw;
+    }
+
     h3 {
         padding-top: 3vw;
     }
-    
+
     .graph-box {
         display: flex;
         flex-direction: column;
-        width: 52vw;
+        width: 51vw;
         padding-left: 3vw;
         background-color: rgb(255, 255, 255);
         border-radius: 2rem;
@@ -377,24 +383,44 @@ main {
     .planet-box {
         display: flex;
         flex-direction: row;
-        width: 52vw;
+        width: 51vw;
         padding-left: 3vw;
         background-color: rgb(255, 255, 255);
         border-radius: 2rem;
         margin-bottom: 2rem;
     }
 
+    .checker-box {
+        display: flex;
+        flex-direction: row;
+        width: 50vw;
+        padding-left: 1.5vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+    }
+
     .viz {
-        width: auto;
+        width: 15vw;
         padding-bottom: 3rem;
         padding-top: 2rem;
+        align-self: center;
+        animation: MoveUpDown 1.5s linear infinite;
     }
+      
+      @keyframes MoveUpDown {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
 
     .viz-box {
         display: flex;
         flex-direction: column;
         width: 40vw;
-
     }
 
     .stat-box {
@@ -406,6 +432,88 @@ main {
         background-color: rgb(26, 131, 163);
         padding: 5vh;
         border-radius: 0 2rem 2rem 2rem;
+    }
+
+    .metric-box {
+        display: flex;
+        flex-direction: column;
+        width: 32vw;
+        height: 69.4vh;
+        color: white;
+        background-color: rgb(26, 131, 163);
+        padding: 7vh 7vh 3vh 7vh;
+        border-radius: 0 2rem 2rem 0;
+    }
+
+    .metric-box-header {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+    }
+
+    .metric-box-header-titleblock h3, .metric-box-header-titleblock p {
+        padding: 0 0 0 2vw;
+    }
+
+    .metric-box-header-titleblock h3 {
+        font-size: medium;
+    }
+
+    .metric-icon {
+        height: 10vh;
+        width: auto;
+    }
+
+    .metric-bar-outside {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        height: 2vh;
+        width: 20vw;
+        background-color: white;
+        border-radius: 0.4rem;
+        margin: 1vh 0 2vh 0;
+    }
+
+    .metric-bar-inside-bad {
+        height: 2vh;
+        background-color: #FF6469;
+        border-radius: 0.4rem 0 0 0.4rem;
+    }
+
+    .metric-bar-inside-med {
+        height: 2vh;
+        background-color: #ffc18a;
+        border-radius: 0.4rem 0 0 0.4rem;
+    }
+
+    .metric-bar-inside-good {
+        height: 2vh;
+        background-color: #70BEAA;
+        border-radius: 0.4rem 0 0 0.4rem;
+    }
+
+    .product-box {
+        display: flex;
+        flex-direction: row;
+        width: 40vw;
+    }
+
+    .product-img-large {
+        width: 15vw;
+        border-radius: 1.5rem;
+    }
+
+    .product-description {
+        font-family: Nunito;
+        width: 15vw;
+        margin-top: 3vh;
+        font-size: small;
+    }
+
+    .product-price-large {
+        color: rgb(160, 160, 160);
+        padding: 0.5rem 0 2rem 0;
     }
 
     .stat {
@@ -525,6 +633,7 @@ main {
 
     .transaction-divider {
         font-size: large;
+        padding-top: 5vh;
     }
 
     .underline {
@@ -555,8 +664,19 @@ main {
     .transaction-score-icon {
         height: 2rem;
         margin: 1rem;
-        
     }
 
+    .back-button {
+        margin: 5vh 0 0 0;
+        height: 3rem;
+        width: 3rem;
+        padding: 0;
+        background-color: white;
+        border: none;
+    }
+
+    .back-button:hover .svg-icon path {
+        fill: black;
+    }
 
 }
