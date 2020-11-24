@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');*/
+@import url("https://p.typekit.net/p.css?s=1&k=nld6inv&ht=tk&f=139.175&a=55643245&app=typekit&e=css");
 
 :root {
     font-size: 14px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -172,7 +174,7 @@ html {
         padding: 7vw 7vw 7vw 7vw;
         margin-right: 3vw;
         margin-left: 3vw;
-        background-color: white;
+        background-color: none;
         border-radius: 2rem 2rem 0 0;
     }
 
@@ -487,11 +489,11 @@ html {
     }
 
     .metric-box-header-titleblock h3 {
-        font-size: medium;
+        font-size: larger;
     }
 
     .metric-icon {
-        height: 10vh;
+        height: 8vh;
         width: auto;
     }
 
@@ -569,7 +571,7 @@ html {
     .alternatives-box {
         display: flex;
         flex-direction: column;
-        margin-left: 3vw;
+        margin-left: 5vw;
         padding: 0 1vw 1vw 3vw;
         background-color: white;
         border-radius: 2rem;
@@ -581,7 +583,7 @@ html {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 27vw;
+        width: 24vw;
         overflow: scroll;
         padding: 0;
     }
@@ -606,7 +608,7 @@ html {
 
     .alternatives-card {
         margin-top: 2rem;
-        margin-right: 3vw;
+        margin-right: 1.5vw;
         width: 8vw;
         height: fit-content;
         padding: 2vh;
@@ -755,6 +757,120 @@ html {
     .transaction-score-icon {
         height: 2rem;
         margin: 1rem;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+    }
+
+    .profile-box {
+        display: flex;
+        height: 50vh;
+        width: 56vw;
+        flex-direction: row;
+        margin: 10vh 0 5vh 0;
+        background-color: white;
+        border-radius: 2rem;
+        margin-top: 10vh;
+    }
+
+    .profile-pic {
+        height: 50vh;
+        border-radius: 2rem 0 2rem 2rem;
+    }
+
+    .profile-text-space {
+        padding: 1.5rem 1.5rem 1.5rem 3rem;
+    }
+
+    .profile-text-space h1 {
+        font-size: 2rem;
+        font-family: "Nunito", sans-serif;
+        font-weight: bold;
+    }
+
+    .profile-text-space h4 {
+        font-weight: bold;
+        font-family: "Nunito", sans-serif;
+        padding: 0;
+    }
+
+    .profile-goals {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .goal-card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        width: 12vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: fit-content;
+        padding: 2vh;
+        background-color: white;
+        border-radius: 0.7rem;
+        box-shadow: 2px 1px 5px rgb(233, 233, 233);
+    }
+
+    .goal-icon {
+        width: 4vw;
+    }
+
+    .goal-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5vw;
+        padding: 0 1vw 1vw 3vw;
+        background-color: white;
+        border-radius: 2rem;
+        width: 16vw;
+        height: 93.5vh;
+        margin: 10vh 0 5vh 5vw;
+    }
+
+    .badge-gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 16vw;
+        overflow: scroll;
+    }
+
+    .badge-gallery::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    .badge-gallery::-webkit-scrollbar-track {
+        background-color: #fefefe;
+    }
+
+    .badge-gallery::-webkit-scrollbar-thumb {
+        background-color: lightgrey;
+        border-radius: 5px;
+        visibility: hidden;
+    }
+
+    .badge-gallery:hover::-webkit-scrollbar-thumb {
+        visibility: visible;
+    }
+
+    .bank-card-box {
+        display: flex;
+        height: 40vh;
+        width: 52vw;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 2rem;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        padding: 0 1vw 0 3vw;
     }
 
     .back-button {
