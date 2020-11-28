@@ -566,6 +566,193 @@ html {
         background-color: white;
         border: none;
     }
+
+    .checker {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    .checker-box {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+        padding-top: 5vh;
+    }
+
+    .metric-box {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        height: 69.4vh;
+        color: white;
+        background-color: rgb(26, 131, 163);
+        padding: 10vh 15vw 10vh 15vw;
+        border-radius: 0 0 2rem 2rem;
+        font-size: x-large;
+    }
+
+    .metric-box-header {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+    }
+
+    .metric-box-header-titleblock h3,
+    .metric-box-header-titleblock p {
+        padding: 0 0 0 2vw;
+    }
+
+    .metric-box-header-titleblock h3 {
+        font-size: larger;
+    }
+
+    .metric-icon {
+        height: 8vh;
+        width: auto;
+    }
+
+    .metric-bar-outside {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        height: 2vh;
+        width: 60vw;
+        background-color: white;
+        border-radius: 0.4rem;
+        margin: 1vh 0 2vh 0;
+    }
+
+    .metric-bar-inside-bad {
+        height: 2vh;
+        background-color: #ff6469;
+        border-radius: 0.4rem 0 0 0.4rem;
+    }
+
+    .metric-bar-inside-med {
+        height: 2vh;
+        background-color: #ffc18a;
+        border-radius: 0.4rem 0 0 0.4rem;
+    }
+
+    .metric-bar-inside-good {
+        height: 2vh;
+        background-color: #70beaa;
+        border-radius: 0.4rem 0 0 0.4rem;
+    }
+
+    .product-box {
+        display: flex;
+        flex-direction: row;
+        width: 85vw;
+    }
+
+    .product-detail-block {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        margin: 5vh 15vw 0 15vw;
+    }
+
+    .product-detail-block h3 {
+        font-size: xx-large;
+    }
+
+    .product-img-large {
+        width: 60vw;
+        border-radius: 1.5rem;
+        align-self: center;
+    }
+
+    .product-img-small {
+        width: 30vw;
+        border-radius: 0.7rem;
+    }
+
+    .product-description {
+        font-family: Nunito;
+        width: 60vw;
+        margin: 3vh 0 3vh 0;
+        font-size: large;
+    }
+
+    .product-price-large {
+        color: rgb(160, 160, 160);
+        padding: 0.5rem 0 1.5rem 0;
+        font-size: x-large;
+    }
+
+    .product-price-small {
+        color: rgb(160, 160, 160);
+        padding: 0.1rem 0 0.7rem 0;
+        font-size: large;
+    }
+
+    .alternatives-box {
+        font-size: x-large;
+        display: flex;
+        flex-direction: column;
+        padding: 5vh 1vw 1vw 3vw;
+        background-color: white;
+        border-radius: 2rem;
+        width: 86vw;
+        height: 70vh;
+        margin-bottom: 10vh;
+    }
+
+    .alternatives-box h3 {
+        font-size: x-large;
+    }
+
+    .alternatives-gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 85vw;
+        overflow: scroll;
+        padding: 0;
+    }
+
+    .alternatives-gallery::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    .alternatives-gallery::-webkit-scrollbar-track {
+        background-color: #fefefe;
+    }
+
+    .alternatives-gallery::-webkit-scrollbar-thumb {
+        background-color: lightgrey;
+        border-radius: 5px;
+        visibility: hidden;
+    }
+
+    .alternatives-gallery:hover::-webkit-scrollbar-thumb {
+        visibility: visible;
+    }
+
+    .alternatives-card {
+        margin-top: 2rem;
+        margin-right: 5vw;
+        width: 32vw;
+        height: fit-content;
+        padding: 2vh;
+        background-color: white;
+        border-radius: 0.7rem;
+        box-shadow: 2px 1px 5px rgb(233, 233, 233);
+    }
+
+    .desc {
+        font-size: xx-small;
+    }
+
+    .back-button:hover .svg-icon path {
+        fill: black;
+    }
 }
 
 @media only screen and (min-width: 901px) {
