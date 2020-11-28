@@ -689,7 +689,7 @@ html {
     .product-price-small {
         color: rgb(160, 160, 160);
         padding: 0.1rem 0 0.7rem 0;
-        font-size: larger;
+        font-size: 1rem;
     }
 
     .alternatives-box {
