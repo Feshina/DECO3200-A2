@@ -696,11 +696,11 @@ html {
         font-size: 1rem;
         display: flex;
         flex-direction: column;
-        padding: 5vh 1vw 1vw 3vw;
+        padding: 5vh 1vw 5vw 3vw;
         background-color: white;
         border-radius: 2rem;
         width: 86vw;
-        height: 68vh;
+        height: 73vh;
         margin-bottom: 10vh;
     }
 
