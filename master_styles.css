@@ -440,6 +440,7 @@ html {
         flex-direction: column;
         margin-top: 2rem;
         width: 65vw;
+        height: 30vh;
         justify-content: center;
         align-items: center;
         text-align: center;
