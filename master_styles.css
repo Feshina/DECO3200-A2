@@ -715,7 +715,7 @@ html {
         flex-wrap: wrap;
         width: 86vw;
         overflow: scroll;
-        padding: 0;
+        padding-bottom: 3vh;
     }
 
     .alternatives-gallery::-webkit-scrollbar {
