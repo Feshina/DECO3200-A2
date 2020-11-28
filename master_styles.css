@@ -374,6 +374,197 @@ html {
         height: 2rem;
         margin: 1rem;
     }
+
+    .profile {
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .profile-box {
+        background-color: white;
+        width: 90vw;
+        display: flex;
+        height: 43vh;
+        align-content: flex-start;
+        margin-left: 5vw;
+        border-radius: 2rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .profile-box-pic {
+        border-radius: 2rem;
+        position: relative;
+    }
+
+    .profile-pic {
+        width: 25vw;
+        border-radius: 1rem 1rem 0 1rem;
+    }
+
+    .profile-text-space {
+        padding: 1.5rem 1.5rem 1.5rem 3rem;
+        position: relative;
+        left: -25vw;
+    }
+
+    .profile-text-space h1 {
+        
+        font-size: 2rem;
+        max-width: fit-content;
+        font-family: "Nunito", sans-serif;
+        font-weight: bold;
+        margin-left: 25vw;
+    }
+
+    .profile-text-space h4 {
+        margin-left: 25vw;
+        margin-bottom: 5vh;
+    }
+
+    .profile-text-space h4 {
+        font-weight: bold;
+        font-family: "Nunito", sans-serif;
+        padding: 0;
+    }
+
+    .profile-goals {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .goal-card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        width: 65vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: fit-content;
+        padding: 2vh;
+        background-color: white;
+        border-radius: 0.7rem;
+        box-shadow: 2px 1px 5px rgb(233, 233, 233);
+    }
+
+    .goal-icon {
+        width: 4vw;
+    }
+
+    .goal-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: scroll;
+        margin-left: 5vw;
+        padding: 4vh 2vw 1vw 7vw;
+        background-color: white;
+        border-radius: 2rem;
+        width: 81vw;
+        height: 86vh;
+        margin: 5vh 0 10vh 5vw;
+    }
+
+    .badge-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 80vw;
+        overflow: scroll;
+    }
+
+    .badge-gallery::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    .badge-gallery::-webkit-scrollbar-track {
+        background-color: #fefefe;
+    }
+
+    .badge-gallery::-webkit-scrollbar-thumb {
+        background-color: lightgrey;
+        border-radius: 5px;
+        visibility: hidden;
+    }
+
+    .badge-gallery:hover::-webkit-scrollbar-thumb {
+        visibility: visible;
+    }
+
+    .bank-card-box {
+        display: flex;
+        height: fit-content;
+        width: 84vw;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 2rem;
+        margin-top: 5vh;
+        margin-left: 5vw;
+        padding: 5vw 1vw 3vh 5vw;
+    }
+
+    .bank-card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        width: 50vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: fit-content;
+        padding: 2vh;
+        color: rgb(112, 112, 112);
+        border-radius: 0.7rem;
+        box-shadow: 2px 1px 5px rgb(233, 233, 233);
+    }
+
+    .profile-cards {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        overflow: scroll;
+    }
+
+    .add-bank-card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        width: 5vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: fit-content;
+        padding: 1vh 0vh 1vh 0vh ;
+        color: rgb(185, 185, 185);
+        border-radius: 0.7rem;
+        box-shadow: 2px 1px 5px rgb(233, 233, 233);
+    }
+
+    .add-bank-card h1{
+        padding: 0;
+    }
+
+    .card-icon {
+        width: 10vw;
+        align-self: flex-end;
+    }
+
+    .impact {
+        width: 26vw;
+    }
+
+    .back-button {
+        margin: 5vh 0 0 0;
+        height: 3rem;
+        width: 3rem;
+        padding: 0;
+        background-color: white;
+        border: none;
+    }
 }
 
 @media only screen and (min-width: 901px) {
@@ -838,6 +1029,7 @@ html {
     .badge-gallery {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         flex-wrap: wrap;
         width: 16vw;
         overflow: scroll;
@@ -871,6 +1063,51 @@ html {
         margin-top: 5vh;
         margin-bottom: 5vh;
         padding: 0 1vw 0 3vw;
+    }
+
+    .bank-card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        width: 12vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: fit-content;
+        padding: 2vh;
+        color: rgb(112, 112, 112);
+        border-radius: 0.7rem;
+        box-shadow: 2px 1px 5px rgb(233, 233, 233);
+    }
+
+    .profile-cards {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .add-bank-card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        width: 5vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: fit-content;
+        padding: 1vh 0vh 1vh 0vh ;
+        color: rgb(185, 185, 185);
+        border-radius: 0.7rem;
+        box-shadow: 2px 1px 5px rgb(233, 233, 233);
+    }
+
+    .add-bank-card h1{
+        padding: 0;
+    }
+
+    .card-icon {
+        width: 4vw;
+        align-self: flex-end;
     }
 
     .back-button {
