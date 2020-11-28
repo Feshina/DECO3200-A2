@@ -706,6 +706,7 @@ html {
 
     .alternatives-box h3 {
         font-size: x-large;
+        padding-left: 3vw;
     }
 
     .alternatives-gallery {
@@ -737,8 +738,8 @@ html {
 
     .alternatives-card {
         margin-top: 2rem;
-        margin-right: 5vw;
-        width: 30vw;
+        margin-right: 3vw;
+        width: 29vw;
         height: fit-content;
         padding: 2vh;
         background-color: white;
