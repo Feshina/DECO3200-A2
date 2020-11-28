@@ -588,7 +588,7 @@ html {
         display: flex;
         flex-direction: column;
         width: 60vw;
-        height: 69.4vh;
+        height: fit-content;
         color: white;
         background-color: rgb(26, 131, 163);
         padding: 10vh 15vw 10vh 15vw;
