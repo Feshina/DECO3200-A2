@@ -751,6 +751,10 @@ html {
         font-size: xx-small;
     }
 
+    #checker-title {
+        margin-left: 5vw;
+    }
+
     .back-button:hover .svg-icon path {
         fill: black;
     }
