@@ -440,7 +440,6 @@ html {
         flex-direction: column;
         margin-top: 2rem;
         width: 65vw;
-        height: 30vh;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -556,6 +555,7 @@ html {
 
     .impact {
         width: 26vw;
+        height: 30vh;
     }
 
     .back-button {
