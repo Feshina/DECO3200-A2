@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://p.typekit.net/p.css?s=1&k=nld6inv&ht=tk&f=139.175&a=55643245&app=typekit&e=css");
 
+
+*:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #bbb;
+    opacity: 1;
+}
+
 :root {
     font-size: 14px;
     font-family: "proxima-nova", sans-serif;
@@ -78,6 +88,25 @@ h5 {
     font-family: Nunito, sans-serif;
 }
 
+#checker-screen {
+    height: 97vh;
+    width: 92vw;
+    background-image: url("img/check.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.go-button {
+    height: 4.1rem;
+    width: min-content;
+    padding: 0 2rem 0 2rem;
+    background-color: peachpuff;
+    border: none;
+    border-radius: 0 20px 20px 0;
+}
+
+
+
 /* NAVBAR MESS INCOMING TODO: FIX THIS MESSY MESS */
 
 html {
@@ -146,6 +175,13 @@ html {
 .svg-icon circle {
     stroke: gray;
     stroke-width: 1;
+}
+
+.search-icon {
+    stroke: #252e48;
+    width: 2rem;
+    margin-right: 1vw;
+    margin-left: 2vw;
 }
 
 /* MuSt Be UsAbLe On BoTh MoBiLe AnD dEsKtOp */
@@ -773,8 +809,39 @@ html {
         margin-left: 5vw;
     }
 
+    input {
+        text-align: left;
+        background-color: #ffffff;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 200;
+        padding: 10px 1vw;
+        height: 2rem;
+        width: 20vw;
+        transition: border .5s;
+    }
+    
+    .input:focus {
+        border: 2px solid #1cc592;
+        box-shadow: none;
+    }
+    
+    .input-field {
+        display: flex;
+        width: 73vw;
+        flex-direction: row;
+        background-color: #ffffff;
+        border: 2px solid transparent;
+        border-radius: 20px 0 0 20px;
+    }
+
     .back-button:hover .svg-icon path {
         fill: black;
+    }
+
+    .row {
+        flex-direction: row;
     }
 }
 
@@ -841,7 +908,7 @@ html {
 
     .checker {
         display: flex;
-        flex-direction: 30vw;
+        flex-direction: row;
     }
 
     .checker-box {
@@ -1340,6 +1407,32 @@ html {
     .card-icon {
         width: 4vw;
         align-self: flex-end;
+    }
+
+    input {
+        text-align: left;
+        background-color: #ffffff;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 200;
+        padding: 10px 1vw;
+        height: 2rem;
+        width: 40vw;
+        transition: border .5s;
+    }
+    
+    .input:focus {
+        border: 2px solid #1cc592;
+        box-shadow: none;
+    }
+    
+    .input-field {
+        display: flex;
+        flex-direction: row;
+        background-color: #ffffff;
+        border: 2px solid transparent;
+        border-radius: 20px 0 0 20px;
     }
 
     .back-button {

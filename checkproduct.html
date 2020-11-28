@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="master_styles.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"> <!-- This hurt to figure out -->
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li>
+                <img class="logo" src="img/logo.png"></img>
+            </li>
+            <li class="nav-item">
+                <a href="home.html" class="nav-link">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                        <path
+                            d="M18.121,9.88l-7.832-7.836c-0.155-0.158-0.428-0.155-0.584,0L1.842,9.913c-0.262,0.263-0.073,0.705,0.292,0.705h2.069v7.042c0,0.227,0.187,0.414,0.414,0.414h3.725c0.228,0,0.414-0.188,0.414-0.414v-3.313h2.483v3.313c0,0.227,0.187,0.414,0.413,0.414h3.726c0.229,0,0.414-0.188,0.414-0.414v-7.042h2.068h0.004C18.331,10.617,18.389,10.146,18.121,9.88 M14.963,17.245h-2.896v-3.313c0-0.229-0.186-0.415-0.414-0.415H8.342c-0.228,0-0.414,0.187-0.414,0.415v3.313H5.032v-6.628h9.931V17.245z M3.133,9.79l6.864-6.868l6.867,6.868H3.133z">
+                        </path>
+                    </svg>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="profile.html" class="nav-link">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                        <path
+                            d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z">
+                        </path>
+                    </svg>
+                    <span class="link-text">Profile</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="checker.html" class="nav-link">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                        <path
+                            d="M18.125,15.804l-4.038-4.037c0.675-1.079,1.012-2.308,1.01-3.534C15.089,4.62,12.199,1.75,8.584,1.75C4.815,1.75,1.982,4.726,2,8.286c0.021,3.577,2.908,6.549,6.578,6.549c1.241,0,2.417-0.347,3.44-0.985l4.032,4.026c0.167,0.166,0.43,0.166,0.596,0l1.479-1.478C18.292,16.234,18.292,15.968,18.125,15.804 M8.578,13.99c-3.198,0-5.716-2.593-5.733-5.71c-0.017-3.084,2.438-5.686,5.74-5.686c3.197,0,5.625,2.493,5.64,5.624C14.242,11.548,11.621,13.99,8.578,13.99 M16.349,16.981l-3.637-3.635c0.131-0.11,0.721-0.695,0.876-0.884l3.642,3.639L16.349,16.981z">
+                        </path>
+                    </svg>
+                    <span class="link-text">Checker</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <svg class="svg-icon" id="light" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path
+                                d="m13.5 21h-4c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h4c.827 0 1.5-.673 1.5-1.5v-5c0-.276.224-.5.5-.5s.5.224.5.5v5c0 1.378-1.121 2.5-2.5 2.5z" />
+                        </g>
+                        <g>
+                            <path
+                                d="m23.5 11h-10c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h10c.276 0 .5.224.5.5s-.224.5-.5.5z" />
+                        </g>
+                        <g>
+                            <path
+                                d="m8 24c-.22 0-.435-.037-.638-.109l-5.99-1.997c-.82-.273-1.372-1.035-1.372-1.894v-18c0-1.103.897-2 2-2 .222 0 .438.037.639.11l5.989 1.996c.82.272 1.372 1.034 1.372 1.894v18c0 1.103-.897 2-2 2zm-6-23c-.552 0-1 .449-1 1v18c0 .428.276.808.688.946l6 2c.656.233 1.312-.292 1.312-.946v-18c0-.429-.276-.809-.688-.945l-6-2c-.103-.037-.208-.055-.312-.055z" />
+                        </g>
+                        <g>
+                            <path
+                                d="m15.5 8c-.276 0-.5-.224-.5-.5v-5c0-.827-.673-1.5-1.5-1.5h-11.5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h11.5c1.379 0 2.5 1.122 2.5 2.5v5c0 .276-.224.5-.5.5z" />
+                        </g>
+                        <g>
+                            <path
+                                d="m19.5 15c-.128 0-.256-.049-.354-.146-.195-.195-.195-.512 0-.707l3.646-3.646-3.646-3.646c-.195-.195-.195-.512 0-.707s.512-.195.707 0l4 4c.195.195.195.512 0 .707l-4 4c-.097.096-.225.145-.353.145z" />
+                        </g>
+                    </svg>
+                    <span class="link-text">Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="app">
+
+            <h1 class="welcome-text page-heading" id="checker-title">Checker</h1>
+            <div class="checker">
+                <div class="checker-box">
+                    <div class="product-box">
+                        <a href="checker.html">
+                        <button class="back-button">
+                            <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path
+                                    d="M11.739,13.962c-0.087,0.086-0.199,0.131-0.312,0.131c-0.112,0-0.226-0.045-0.312-0.131l-3.738-3.736c-0.173-0.173-0.173-0.454,0-0.626l3.559-3.562c0.173-0.175,0.454-0.173,0.626,0c0.173,0.172,0.173,0.451,0,0.624l-3.248,3.25l3.425,3.426C11.911,13.511,11.911,13.789,11.739,13.962 ">
+                                </path>
+                            </svg>
+                        </button>
+                    </a>
+                        <div class="product-detail-block">
+                            <h3>Tree Graphic Tee</h3>
+                            <h4 class="product-price-large">$79.99 &emsp; ★★</h4>
+                            <img class="product-img-large" src="img/treetee.jpg">
+                            <p class="product-description">I'm baby hoodie cliche narwhal taxidermy, activated charcoal
+                                banjo viral knausgaard semiotics. IPhone jean shorts hexagon offal mumblecore try-hard
+                                sriracha migas knausgaard.</p>
+                        </div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-box-header">
+                            <img class="metric-icon" src="img/bad.png">
+                            <div class="metric-box-header-titleblock">
+                                <h3>Maybe think again...</h3>
+                                <p>Here's why:</p>
+                            </div>
+                        </div>
+                        <h5>Supplier Ethics</h5>
+                        <div class="metric-bar-outside">
+                            <div class="metric-bar-inside-bad" style="width: 14%;"></div>
+                        </div>
+                        <h5>Material Waste</h5>
+                        <div class="metric-bar-outside">
+                            <div class="metric-bar-inside-med" style="width: 39%;"></div>
+                        </div>
+                        <h5>Manufacturing Methods</h5>
+                        <div class="metric-bar-outside">
+                            <div class="metric-bar-inside-bad" style="width: 14%;"></div>
+                        </div>
+                        <h5>Energy/water consumption</h5>
+                        <div class="metric-bar-outside">
+                            <div class="metric-bar-inside-bad" style="width: 10%;"></div>
+                        </div>
+                        <h5>Animal Welfare</h5>
+                        <div class="metric-bar-outside">
+                            <div class="metric-bar-inside-good" style="width: 80%;"></div>
+                        </div>
+                        <h5>Deforestation</h5>
+                        <div class="metric-bar-outside">
+                            <div class="metric-bar-inside-bad" style="width: 18%;"></div>
+                        </div>
+                        <h5>Pollution</h5>
+                        <div class="metric-bar-outside">
+                            <div class="metric-bar-inside-bad" style="width: 10%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alternatives-box">
+                    <h3>Alternatives:</h3>
+                    <div class="alternatives-gallery">
+                        <div class="alternatives-card">
+                            <h5 class="product-title-small">Tree Graphic Tee</h5>
+                            <h5 class="product-price-small">$79.99 &emsp; ★★</h5>
+                            <img class="product-img-small" src="img/treetee.jpg">
+                        </div>
+                        <div class="alternatives-card">
+                            <h5 class="product-title-small">Tree Graphic Tee</h5>
+                            <h5 class="product-price-small">$79.99 &emsp; ★★</h5>
+                            <img class="product-img-small" src="img/treetee.jpg">
+                        </div>
+                        <div class="alternatives-card">
+                            <h5 class="product-title-small">Tree Graphic Tee</h5>
+                            <h5 class="product-price-small">$79.99 &emsp; ★★</h5>
+                            <img class="product-img-small" src="img/treetee.jpg">
+                        </div>
+                        <div class="alternatives-card">
+                            <h5 class="product-title-small">Tree Graphic Tee</h5>
+                            <h5 class="product-price-small">$79.99 &emsp; ★★</h5>
+                            <img class="product-img-small" src="img/treetee.jpg">
+                        </div>
+                        <div class="alternatives-card">
+                            <h5 class="product-title-small">Tree Graphic Tee</h5>
+                            <h5 class="product-price-small">$79.99 &emsp; ★★</h5>
+                            <img class="product-img-small" src="img/treetee.jpg">
+                        </div>
+                        <div class="alternatives-card">
+                            <h5 class="product-title-small">Tree Graphic Tee</h5>
+                            <h5 class="product-price-small">$79.99 &emsp; ★★</h5>
+                            <img class="product-img-small" src="img/treetee.jpg">
+                        </div>
+                        <div class="alternatives-card">
+                            <h5 class="product-title-small">Tree Graphic Tee</h5>
+                            <h5 class="product-price-small">$79.99 &emsp; ★★</h5>
+                            <img class="product-img-small" src="img/treetee.jpg">
+                        </div>
+                        <div class="alternatives-card">
+                            <h5 class="product-title-small">Tree Graphic Tee</h5>
+                            <h5 class="product-price-small">$79.99 &emsp; ★★</h5>
+                            <img class="product-img-small" src="img/treetee.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+
+</html>
