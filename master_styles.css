@@ -247,19 +247,41 @@ html {
         display: flex;
         flex-direction: column;
         align-items: baseline;
-        padding: 7vw 7vw 7vw 7vw;
-        margin-bottom: 3vw;
+        padding: 7vw 7vw 0 7vw;
         margin-right: 3vw;
         margin-left: 3vw;
         background-color: rgb(255, 255, 255);
         border-radius: 0 0 2rem 2rem;
         margin-bottom: 2rem;
+        height: 50vh;
     }
 
-    .graph {
-        margin: auto;
+    
+    .graph-header {
         width: 78vw;
+        padding-bottom: 3rem;
         padding-top: 2rem;
+        position: relative;
+        top: -7vh;
+    }
+
+    .graph-scroll {
+        height: 24vh;
+    }
+ 
+
+    .scrollable-container {
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        height: 50vh;
+        width: 78vw;
+        position: relative;
+        top: -10vh;
+    }
+
+    .scrollable-container::-webkit-scrollbar {
+        display: none;
     }
 
     .transaction-container {
@@ -773,17 +795,38 @@ html {
         display: flex;
         flex-direction: column;
         width: 51vw;
+        height: 60vh;
         padding-left: 3vw;
         background-color: rgb(255, 255, 255);
         border-radius: 2rem;
         margin-bottom: 2rem;
     }
 
-    .graph {
-        margin: auto;
-        height: 100px;
+    .graph-header {
+        width: 48vw;
         padding-bottom: 3rem;
         padding-top: 2rem;
+        position: relative;
+        top: -8.5vh;
+    }
+
+    .graph-scroll {
+        height: 24vh;
+    }
+ 
+
+    .scrollable-container {
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        height: 50vh;
+        width: 48vw;
+        position: relative;
+        top: -14vh;
+    }
+
+    .scrollable-container::-webkit-scrollbar {
+        display: none;
     }
 
     #hello {
