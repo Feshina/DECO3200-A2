@@ -693,7 +693,7 @@ html {
     }
 
     .alternatives-box {
-        font-size: x-large;
+        font-size: 1.5rem;
         display: flex;
         flex-direction: column;
         padding: 5vh 1vw 1vw 3vw;
