@@ -669,7 +669,7 @@ html {
     }
 
     .product-img-small {
-        width: 30vw;
+        width: 28vw;
         border-radius: 0.7rem;
     }
 
@@ -689,7 +689,7 @@ html {
     .product-price-small {
         color: rgb(160, 160, 160);
         padding: 0.1rem 0 0.7rem 0;
-        font-size: large;
+        font-size: larger;
     }
 
     .alternatives-box {
@@ -738,7 +738,7 @@ html {
     .alternatives-card {
         margin-top: 2rem;
         margin-right: 5vw;
-        width: 32vw;
+        width: 30vw;
         height: fit-content;
         padding: 2vh;
         background-color: white;
