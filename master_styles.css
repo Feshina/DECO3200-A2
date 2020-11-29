@@ -681,6 +681,17 @@ html {
         margin: 1vh 0 2vh 0;
     }
 
+    .health-bar-outside {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        height: 2vh;
+        width: 60vw;
+        background-color: white;
+        border-radius: 0.4rem;
+        margin: 1vh 0 2vh 0;
+    }
+
     .metric-bar-inside-bad {
         height: 2vh;
         background-color: #ff6469;
@@ -852,6 +863,10 @@ html {
 
     h3 {
         padding-top: 3vw;
+    }
+
+    .mobile-health {
+        display: none;
     }
 
     .graph-box {
@@ -1442,6 +1457,17 @@ html {
         padding: 0;
         background-color: white;
         border: none;
+    }
+
+    .health-bar-outside {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        height: 2vh;
+        width: 10vw;
+        background-color: white;
+        border-radius: 0.4rem;
+        margin: 1vh 0 2vh 0;
     }
 
     .back-button:hover .svg-icon path {
